@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade Lego WEBI  </title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div id="container">
@@ -13,20 +14,20 @@
             <div>
                 <input type="text" name="imageURL" placeholder="Adicione sua URL">
                 <select name="select" id="select">
-                    <option value="cabaca">Cabeça</option>
+                    <option value="cabeca">Cabeça</option>
                     <option value="tronco">Tronco</option>
                     <option value="perna">Perna</option>
                 </select>
             </div>
 
-            <button>Adicionar</button>
+            <button onclick="AddParte()">Adicionar</button>
         
         </header>
         <main>
             <div>
-                <div class="corpo"></div>
-                <div class="corpo"></div>
-                <div class="corpo"></div>
+                <div class="corpo" id="cabeca"></div>
+                <div class="corpo" id="tronco"></div>
+                <div class="corpo" id="perna"></div>
             </div>
             
             <div>
